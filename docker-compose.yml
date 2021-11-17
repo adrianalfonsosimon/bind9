@@ -5,7 +5,7 @@ services:
     image: internetsystemsconsortium/bind9:9.16
     networks:
       dc01:
-        ipv4_address: 10.0.0.254
+        ipv4_address: 10.1.0.254
     ports:
       - 53:53
     volumes:
@@ -21,7 +21,7 @@ services:
     stdin_open: true  # docker run -i
     tty: true         # docker run -t
     dns:
-      - 10.0.0.254  # contenedor de dns server
+      - 10.1.0.254  # contenedor de dns server
 volumes:
   conf1:
     external: true
@@ -35,4 +35,4 @@ networks:
   dc01:
     ipam: 
       config:
-        - subnet: 10.0.0.0/24
+        - subnet: 10.1.0.0/24
