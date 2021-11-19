@@ -47,7 +47,7 @@ nameserver 10.0.0.254
 options ndots:0
 ```
 ### arranque y parada bind9
-_esto se ejecutará en una maquina real con el servicio bind9 instalado
+_esto se ejecutará en una maquina real con el servicio bind9 instalado_
 
 ```
 sudo service bind9 restart # para reiniciar el servicio 
