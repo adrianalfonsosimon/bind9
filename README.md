@@ -1,4 +1,4 @@
-##Explición fichero docker-compose.yml
+## Explición fichero docker-compose.yml
 
 ```
 version: "3.3"       #versión a utilizar de docker compose 
