@@ -40,3 +40,8 @@ networks:           #creación de la red asignada anteriormnete en los contenedo
       config:
         - subnet: 10.1.0.0/24     #subred en la que se encontrará
 ```
+
+### /etc/resolve.conf
+nameserver 10.0.0.254
+options ndots:0
+
