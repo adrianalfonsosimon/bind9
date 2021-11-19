@@ -41,8 +41,17 @@ networks:           #creación de la red asignada anteriormnete en los contenedo
         - subnet: 10.1.0.0/24     #subred en la que se encontrará
 ```
 
-### /etc/resolve.conf
+### /etc/resolve.conf / asir_cliente
 ```
 nameserver 10.0.0.254
 options ndots:0
+```
+### arranque y parada bind9
+_esto se ejecutará en una maquina real con el servicio bind9 instalado
+
+```
+sudo service bind9 restart # para reiniciar el servicio 
+sudo service bind9 start  #para iniciar el servicio
+sudo service bind9 stop #para parar el servicio
+sudo service bind9 status  #para ver el estado del servicio así como los posibles fallos
 ```
